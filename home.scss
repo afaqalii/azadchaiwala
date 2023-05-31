@@ -1,0 +1,1186 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+$Paratext: 18px;
+$ParaMidText: 16px;
+$ParaSmallText:15px;    
+$BlackColor: #222222;
+$SpanColor: rgb(144,23,255);
+$ParaColor: rgb(103,108,122);
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button {
+    transition: .2s ease-out;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: $ParaColor;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+//   <!--   ========== NAVBAR  SECTION ========
+
+.go-to-top-btn {
+    position: fixed;
+    bottom: 2em;
+    left: 1em;
+    z-index: 3;
+
+
+    i {
+        text-align: center;
+        padding: 1em 1.3em;
+        font-size: 1.2em;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+}
+    .talk-to-us {
+        position: fixed;
+        bottom: 3em;
+        right: 1em;
+        z-index: 3;
+
+         span {
+            position: relative;
+            font-size: .8em;
+            font-weight: bold;
+            color: white;
+            left: 20px;
+            bottom: 10px;
+            background-color: red;
+            border-radius: 50%;
+            padding: 10px ;
+         }
+
+         h5 {
+            display: inline-block;
+            padding: .7em 1.5em;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+         }
+    }
+
+
+
+
+.most-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .7em;
+} 
+.top-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    a {
+        color: black;
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 1.4em;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    .nav-logo {
+        width: 200px;
+        @media (min-width:1230px) {
+             width: 400px;
+        }
+    } 
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+       li {
+        list-style: none;
+        font-size: 16px;
+        white-space: nowrap;
+        position: relative;
+        @media (min-width:1024px) {
+            font-size: 20px;
+        }
+       }
+       .login-btn {
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        padding: .5em;  
+        a {
+            padding: 2em;
+            color: black;
+            font-weight: bold;
+            
+        }
+       }
+        a {
+            color: white;
+            &:hover  {
+                border-bottom: 2px solid white;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .menuBtn {
+        display: none;
+    }
+}
+
+
+
+//   <!--   ========== HERO   SECTION ========
+
+
+
+.hero-section {
+  
+    margin: 2em auto;
+
+  .hero-container {
+    display: flex;
+    justify-content: space-around;
+    @media (min-width:768px) {
+        padding: 0 3em;
+    }
+    
+    .hero-container-video {
+        img {
+            width: 100%;
+        }
+        @media (min-width:1024px) {
+            img {
+                width: 500px;
+            }
+        }
+    }
+
+    .hero-container-content {
+        display: flex;
+        padding: 3em;
+        letter-spacing: 2px;
+        flex-direction: column;
+        margin-right: 2em;
+        width: 60%;
+
+        span {
+            color:  $SpanColor;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: $BlackColor;
+        }
+
+        p {
+            margin-top: 1em;
+            font-size: 1.5em;
+        }
+    }
+    
+  }
+}
+
+//   <!--   ========== POPULARITY   SECTION ========
+
+.popularity-container {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+
+    .popularity-section {
+        display: flex;
+        padding: 3em;
+        gap: 40px;
+
+        .popularity-content {
+            display: flex;
+            flex-direction: column;
+        
+            span {
+                font-size: 40px;
+                color: $SpanColor;
+            }
+            h2 {
+             font-size: 14px;
+             color: $ParaColor;
+            }
+        
+        }
+    }
+}
+
+
+//   <!--   ========== WHY WE ARE MEHANGAY AND BETTER   SECTION ========
+
+
+.why-we-are-mehangay-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    padding-top: 3em;
+
+     .why-we  {
+        padding: .3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+
+       h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: $SpanColor;
+       }
+       
+}
+
+//   <!--   ========== ABOUT OUR STUDENTS / TESTIMONIALS   SECTION ========
+
+.about-students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 64px;
+        padding: .5em;
+        
+    }
+    h2 {
+        font-size: 32px;
+        margin-bottom: .5em;
+    }
+    p {
+        width: 80%;
+        font-size: 22.5px;
+        word-spacing: 4px;
+        padding: 1em;
+        font-weight: bold;
+        margin-bottom: 5em;
+    }
+}
+
+
+//   <!--   ========== COURSES WE OFFER   SECTION ========
+
+.courses-section {
+    background-color: #f8f8f8;
+    padding-top: 1.5em;
+
+    h1 {
+        text-align: center;
+    }
+    .course-heading {  
+            font-size: 3em;
+            color: $SpanColor;
+            margin-bottom: 2em;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .course {
+           width: 60%;
+           padding: 1em;
+           border-radius: 15px;
+           margin: 0 auto;
+           background-color: #ffff;
+           box-shadow: 0 0 10px 10px #f0f0f0;
+           margin-bottom: 40px;
+
+           &:hover {
+            border: 2px solid $SpanColor;
+           }
+
+
+           figure {
+            background-color: #85A3F7; 
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1em;
+        }
+           img {
+             max-width: 200px;
+             width: 80%;
+           }
+           h1 {
+            font-size: $Paratext;
+            text-align: left;
+            margin-bottom: 1em;
+
+           }
+           p {
+            font-size: $ParaSmallText;
+            text-align: left;
+            margin-bottom: 1em;
+           }
+        }
+    }
+}
+
+
+//   <!--   ========== HALL OF FAME   SECTION ========
+
+
+.hall-of-fame {
+    background-color: #f8f8f8;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 3em;
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        color: $SpanColor;
+        margin-bottom: 2em;
+    }
+    .results {
+        
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            .result-box {
+                display: flex;
+                justify-content: center;
+            }
+        .result {
+            background-color: #fff;
+            font-size: $ParaMidText;
+            border-radius:20px ;
+            padding: 30px;
+            box-shadow: 0 0 10px 10px #f0f0f0;
+            width: 50%;
+            
+            .result-header {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 2em;
+
+                img {
+                   width: 62px;
+                }
+                .result-info p:nth-child(1) {
+                  font-weight: bold;
+                }
+           }
+        
+        }
+    }
+}
+
+
+//   <!--   ========== WHY CHOOSE IT  INDUSTRY   SECTION ========
+
+ .choosing-IT {
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 2em;
+        color:$SpanColor;
+        margin-bottom: .5em;
+    }
+    .IT-heading2 {
+        text-align: center;
+        font-size: 2em;
+    }
+    .reasons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4em;
+  
+        .reason-2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .reason {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        justify-content: center;
+        margin-top: 1.4em; 
+        width: 50%;
+        margin-bottom: 1.4em; 
+  
+        .reason-content {
+            width: 50%;
+            padding:1em;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        i {
+            font-size: 6em;
+        }
+    }
+ 
+}
+}
+
+//   <!--   ========== WHY AZADS INSTITUTE    SECTION ========
+
+
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    span {
+        text-align: center;
+        font-weight: bold;
+        color: $SpanColor;
+        padding: 2em;
+    }
+    .table-box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+
+        table tr th {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            border-bottom: .7px solid black;
+        }
+    }
+    .why-choose-us_content {
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+        
+         .azads-institute-heading {
+            color: $SpanColor;
+         }
+         h1 {
+            font-size: 4em;
+            margin-bottom: .2em;
+         }
+         h3 {
+            margin-left: -5em;
+            margin-top: 2em;
+         }
+    }
+
+    td {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+}
+
+
+//   <!--   ========== AZADS GALLEY    SECTION ========
+
+.life-at-institute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        padding: 3em;
+        color: $SpanColor;
+    }
+    .picture-box {
+        display: flex;
+        justify-content: center;
+    }    
+    .life-at-institute-pics { 
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+//   <!--   ========== OUR MISSION     SECTION ========
+
+
+
+.our-mission-container {
+    padding: 1em;
+    @media (min-width:768px) {
+      padding: 4em;  
+    }
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        margin: 2em;
+        color: $SpanColor;
+    }
+
+    .our-mission {
+        display: flex;
+        justify-content: space-around;
+        .misson-img {
+            width: 300px;
+            @media (min-width:768px) {
+              width: 400px;
+               
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .our-mission-content { 
+            width: 50%;
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 1em;
+            }
+
+            p {
+                margin-bottom: 1em;
+            }
+
+                             
+            
+                button {
+                    background-color: $SpanColor;
+                    padding: 1em 2.5em;
+                    border-radius: 15px;
+                    border: none;
+                    margin-top: 1em;
+                    color: white;
+                    cursor: pointer;   
+    
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+    }
+    }
+}
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F8F6;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .contact-us-content {
+        padding-left: 4em;
+         h1 {
+            font-size: 5em;
+            margin-top: 1em;
+            color: $SpanColor;
+    }
+
+      p {
+        margin-top: 1em;
+        font-size: 1.3em;
+      }
+
+        button {
+            padding: 2em 4.5em;
+            margin-top: 4em;
+            background-color: $SpanColor;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: black;
+            }
+             a {
+                color: white;
+                font-size: 1.2em;
+                font-weight: bold;
+             }
+        }
+    }
+}
+.contact-us-container img {
+    width: 40%;
+}
+
+
+//   <!--   ========== FOOTER SECTION ========
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 3em;
+
+    p {
+      color: white;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    i { 
+        color: white;
+        font-size: 2em;
+     }
+    .contact-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .right-reserved {
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            margin-top: 1em;
+        }
+     }
+}
+
+
+
+
+//   ======== NEXT PAGE SECTION   =======
+//    ======= PROGRAMMING COURSE SECTION  ========
+//   ========  STYLING STARTE FROM HERE ========
+
+
+
+ .course-introduction-section {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    background-color: $SpanColor;
+    color: white;
+    text-align: center;
+ }
+
+ .course-introduction-content {
+    width: 50%;
+      
+       h1 {
+        font-size: 3em;
+        padding: .5em;
+       }
+       p {
+         font-size: 1.3em;
+           color: white;
+          margin-bottom: 1em;
+       }
+ }
+
+
+//    =======  COURSE featrures  SECTION  ========
+
+
+.course-featuers-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.course-features {
+    padding: 0 2em;
+}
+.course-features-content-para {
+    display: flex;
+    margin-top: 2em;
+    gap: 20px;
+
+    i {
+        font-size: 1.4em;
+    }
+}
+
+.course-benefits-section {
+    display: flex;
+    
+}
+.course-curriculam {
+    ul {
+        margin-left: 2em;
+    }
+}
+.course-benefits-content {
+    p {
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+}
+.course-curriculam, .course-benefits-content ,.take-decision-section,.take-decision2-section {
+    width: 50%;
+    padding: 3em;
+      
+    h1 {
+        margin-bottom: 1em;
+    }
+}
+
+
+//    =======  HELPING IN TAKING DECIISON  SECTION  ========
+
+
+.course-salary-section {
+    background-color: #F6D42B;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-salary {
+    width: 80%;
+}
+
+//    =======  STUDENTS TESTIMONIALS  SECTION  ========
+
+.success-stories-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 2em;
+    
+    
+    h1 {
+        margin-bottom: 2em;
+        font-size: 2em;
+        color: $SpanColor;
+    }
+}
+
+.success-stories-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+     
+}
+.result {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px #f0f0f0;
+    border-radius: 20px;
+    padding: 2em;
+}
+.result-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 20px;
+}
+
+
+
+//    =======  HELPING IN TAKING DECIISON  SECTION  ========
+
+.take-decision-container {
+    display: flex;
+}
+
+.take-decision-section {
+   p {
+    margin-bottom: 1em;
+   }
+
+   img {
+    border:  2px solid black;
+}
+}
+
+
+//    =======  FAQS   SECTION  ========
+
+
+.faqs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+     h1 {
+        margin-bottom: 1em;
+        font-size: 2em;
+     }
+}
+
+.faqs {
+    width: 50%;
+}
+
+details {
+
+summary {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+p {
+    margin-bottom: 20px;
+    line-height: 1.4em;
+    margin-left: 20px;
+}
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+}
+
+
+
+//  ABOUT AZAD  BHAE  PAGE STYLING STARTS HERE
+// <!-- 
+//   ============== ABOUT  AZAD cHAI WALA   SECTION  ==============
+// -->
+
+// .about-azadchai-container {
+
+// }
+.about-heading {
+    h1 {
+        text-align: center;
+        margin: 2em;
+        color: $SpanColor;
+    }
+}
+span {
+    color: $SpanColor;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.azadchai-content-mission {
+    flex-direction: row-reverse;
+}
+.about-azadchai-content-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:left;
+    width: 40%;
+      h1 {
+        margin-bottom: 1em;
+      }
+
+      p {
+        margin-bottom: 1em;
+      }
+}
+
+
+
+
+//  RESPONSIVE  STYLING FOR MOBILES  STARTS HERE
+// <!-- 
+//   ============== NAVBAR    SECTION  ==============
+// -->
+
+@media(max-width:768px) {
+//   ============== MOST TOP    SECTION  ==============
+
+.most-top {
+    justify-content: center;
+   .top-content {
+       flex-direction: row;
+       text-align: center;
+       p {
+        font-size: .8em;
+       }
+   }
+}
+
+
+
+
+//   ============== NAVBAR    SECTION  ==============
+
+    nav {
+        img {
+            width: 200px;
+        }
+        i {
+            color: white;
+        }       
+      ul {
+        position: absolute;
+        top: 70px;
+        right: 100%;
+        width: 100%;
+        padding: 2em;
+        background-color: black;
+        flex-direction: column;
+        @media (min-width:624px) {
+            width: 50%;
+        }
+      }
+      .menuBtn {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        span {
+            height: 2px;
+            width: 25px;
+            background-color: white;
+            border-radius: 5px; 
+            transition: .1s ease-in;
+          }
+         .bar.active:nth-child(1) {
+            transform: translateY(4px) rotate(45deg);
+          }
+        .bar.active:nth-child(2) {
+            transform: translateY(-2px) rotate(45deg);
+          }
+        .bar.active:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+          }
+        .close {
+            font-size: 18px;
+        }
+    }
+    }
+
+    .ulClass {
+        right: 0;
+       
+    }
+//   ============== NAVBAR    SECTION  ==============
+   .hero-section {
+
+   
+     .hero-container {
+        flex-direction: column;
+
+         .hero-container-content {
+            padding: 1em;
+            width: 100%;
+            margin-right: 0;
+
+            p {
+                font-size: .9em;
+            }
+         }
+         .hero-section-video {
+            display: flex;
+            padding: 1em;
+            video {
+                width: 100%;
+                border: 2px solid black;
+            }
+         }
+     }
+
+}
+
+//   ============== POPULARITY     SECTION  ==============
+
+
+.popularity-container {
+
+    .popularity-section {
+       padding: 0;
+       gap: 10px;
+    
+        .popularity-content {
+            text-align: center;
+           span {
+               font-size: 20px;
+           }
+        }
+   }
+ }
+
+
+//   ============== WHY WE ARE MEHNAGAY     SECTION  ==============
+
+.why-we-are-mehangay-container {
+    flex-direction: column;
+
+    .why-we {
+        width: 100%;
+    }
+}
+
+//   ============== ABOUT OUR STUDENTS     SECTION  ==============
+
+
+.about-students {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+
+//   ============== COURSES WE OFFER     SECTION  ==============
+
+.courses-section {
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+
+        .course {
+            width: 300px;
+        }
+    }
+}
+
+
+
+
+//   ============== OUR MISSION    SECTION  ==============
+    
+.our-mission-container {
+      .our-mission{
+        flex-direction: column;
+      }
+}
+
+
+//   ============== RESULT     SECTION  ==============
+
+.hall-of-fame {
+    .results {
+       display: flex;
+       flex-wrap: wrap;
+        .result {
+            width: 300px;
+         }
+        
+    }
+}
+//   ============== WHY CHOOSE IT INDUSTRY    SECTION  ==============
+
+.choosing-IT {
+    .reasons {
+       .reason {
+        flex-direction: column;
+        width: 100%;
+       }
+    }
+}
+
+
+
+
+//   ============== WHY CHOSE US      SECTION  ==============
+
+.why-choose-us {
+    .why-choose-us_content {
+        h1 {
+            font-size: 1.4em;
+        }
+        h3 {
+            display: none;
+        }
+    }
+}
+
+//   ============== LIFE AT AZAD INSTITUE     SECTION  ==============
+
+.life-at-institute {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+
+//   ============== OUR MISSION     SECTION  ==============
+
+
+.our-mission-container {
+    h1 {
+        font-size: 2em;
+    }
+   .our-mission {
+
+    .our-mission-content {
+        width: 100%;
+       
+        h1 {
+            margin-top: 20px;
+        }
+    
+    }
+   }
+}
+//   ============== ABOUT US   PAGE ==============
+.about {
+    flex-direction: column;
+    .about-azadchai-content-header {
+        width: 90%;
+        margin: 0 auto;
+      }
+}
+
+
+//   ============== CONTACT US      SECTION  ==============
+
+.contact-us-container {
+    flex-direction: column;
+
+    .contact-us-content {
+      h1 {
+        font-size: 2em;
+      }
+      button {
+        font-size: .6em;
+      }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+//   ============== FOOTER     SECTION  ==============
+footer {
+    .contact-content {
+        flex-direction: column;
+
+         .social-contact {
+            margin-top: 20px;
+         }
+        img {
+            width: 200px;
+        }
+    }
+}
+
+}

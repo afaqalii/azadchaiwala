@@ -1,0 +1,958 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  transition: 0.2s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: rgb(103, 108, 122);
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.go-to-top-btn {
+  position: fixed;
+  bottom: 2em;
+  left: 1em;
+  z-index: 3;
+}
+.go-to-top-btn i {
+  text-align: center;
+  padding: 1em 1.3em;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.talk-to-us {
+  position: fixed;
+  bottom: 3em;
+  right: 1em;
+  z-index: 3;
+}
+.talk-to-us span {
+  position: relative;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  left: 20px;
+  bottom: 10px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+}
+.talk-to-us h5 {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.most-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7em;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.top-content a {
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 1.4em;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+nav .nav-logo {
+  width: 200px;
+}
+@media (min-width: 1230px) {
+  nav .nav-logo {
+    width: 400px;
+  }
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+nav ul li {
+  list-style: none;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    font-size: 20px;
+  }
+}
+nav ul .login-btn {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 0.5em;
+}
+nav ul .login-btn a {
+  padding: 2em;
+  color: black;
+  font-weight: bold;
+}
+nav ul a {
+  color: white;
+}
+nav ul a:hover {
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+nav .menuBtn {
+  display: none;
+}
+
+.hero-section {
+  margin: 2em auto;
+}
+.hero-section .hero-container {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .hero-section .hero-container {
+    padding: 0 3em;
+  }
+}
+.hero-section .hero-container .hero-container-video img {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .hero-section .hero-container .hero-container-video img {
+    width: 500px;
+  }
+}
+.hero-section .hero-container .hero-container-content {
+  display: flex;
+  padding: 3em;
+  letter-spacing: 2px;
+  flex-direction: column;
+  margin-right: 2em;
+  width: 60%;
+}
+.hero-section .hero-container .hero-container-content span {
+  color: rgb(144, 23, 255);
+}
+.hero-section .hero-container .hero-container-content h1 {
+  font-size: 3em;
+  color: #222222;
+}
+.hero-section .hero-container .hero-container-content p {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.popularity-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+.popularity-container .popularity-section {
+  display: flex;
+  padding: 3em;
+  gap: 40px;
+}
+.popularity-container .popularity-section .popularity-content {
+  display: flex;
+  flex-direction: column;
+}
+.popularity-container .popularity-section .popularity-content span {
+  font-size: 40px;
+  color: rgb(144, 23, 255);
+}
+.popularity-container .popularity-section .popularity-content h2 {
+  font-size: 14px;
+  color: rgb(103, 108, 122);
+}
+
+.why-we-are-mehangay-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+  padding-top: 3em;
+}
+.why-we-are-mehangay-container .why-we {
+  padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-we-are-mehangay-container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(144, 23, 255);
+}
+
+.about-students {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about-students h1 {
+  font-size: 64px;
+  padding: 0.5em;
+}
+.about-students h2 {
+  font-size: 32px;
+  margin-bottom: 0.5em;
+}
+.about-students p {
+  width: 80%;
+  font-size: 22.5px;
+  word-spacing: 4px;
+  padding: 1em;
+  font-weight: bold;
+  margin-bottom: 5em;
+}
+
+.courses-section {
+  background-color: #f8f8f8;
+  padding-top: 1.5em;
+}
+.courses-section h1 {
+  text-align: center;
+}
+.courses-section .course-heading {
+  font-size: 3em;
+  color: rgb(144, 23, 255);
+  margin-bottom: 2em;
+}
+.courses-section .courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.courses-section .courses .course {
+  width: 60%;
+  padding: 1em;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px 10px #f0f0f0;
+  margin-bottom: 40px;
+}
+.courses-section .courses .course:hover {
+  border: 2px solid rgb(144, 23, 255);
+}
+.courses-section .courses .course figure {
+  background-color: #85A3F7;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.courses-section .courses .course img {
+  max-width: 200px;
+  width: 80%;
+}
+.courses-section .courses .course h1 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+.courses-section .courses .course p {
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.hall-of-fame {
+  background-color: #f8f8f8;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 3em;
+}
+.hall-of-fame h1 {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(144, 23, 255);
+  margin-bottom: 2em;
+}
+.hall-of-fame .results {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.hall-of-fame .results .result-box {
+  display: flex;
+  justify-content: center;
+}
+.hall-of-fame .results .result {
+  background-color: #fff;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px 10px #f0f0f0;
+  width: 50%;
+}
+.hall-of-fame .results .result .result-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2em;
+}
+.hall-of-fame .results .result .result-header img {
+  width: 62px;
+}
+.hall-of-fame .results .result .result-header .result-info p:nth-child(1) {
+  font-weight: bold;
+}
+
+.choosing-IT h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 2em;
+  color: rgb(144, 23, 255);
+  margin-bottom: 0.5em;
+}
+.choosing-IT .IT-heading2 {
+  text-align: center;
+  font-size: 2em;
+}
+.choosing-IT .reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+}
+.choosing-IT .reasons .reason-2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.choosing-IT .reasons .reason {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  justify-content: center;
+  margin-top: 1.4em;
+  width: 50%;
+  margin-bottom: 1.4em;
+}
+.choosing-IT .reasons .reason .reason-content {
+  width: 50%;
+  padding: 1em;
+}
+.choosing-IT .reasons .reason .reason-content h2 {
+  margin-bottom: 20px;
+}
+.choosing-IT .reasons .reason i {
+  font-size: 6em;
+}
+
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.why-choose-us span {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(144, 23, 255);
+  padding: 2em;
+}
+.why-choose-us .table-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.why-choose-us .table-box table tr th {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  border-bottom: 0.7px solid black;
+}
+.why-choose-us .why-choose-us_content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.why-choose-us .why-choose-us_content .azads-institute-heading {
+  color: rgb(144, 23, 255);
+}
+.why-choose-us .why-choose-us_content h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+.why-choose-us .why-choose-us_content h3 {
+  margin-left: -5em;
+  margin-top: 2em;
+}
+.why-choose-us td {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.life-at-institute {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.life-at-institute h1 {
+  text-align: center;
+  font-size: 3em;
+  padding: 3em;
+  color: rgb(144, 23, 255);
+}
+.life-at-institute .picture-box {
+  display: flex;
+  justify-content: center;
+}
+.life-at-institute .life-at-institute-pics {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.life-at-institute .life-at-institute-pics img {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our-mission-container {
+  padding: 1em;
+}
+@media (min-width: 768px) {
+  .our-mission-container {
+    padding: 4em;
+  }
+}
+.our-mission-container h1 {
+  text-align: center;
+  font-size: 4em;
+  margin: 2em;
+  color: rgb(144, 23, 255);
+}
+.our-mission-container .our-mission {
+  display: flex;
+  justify-content: space-around;
+}
+.our-mission-container .our-mission .misson-img {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .our-mission-container .our-mission .misson-img {
+    width: 400px;
+  }
+}
+.our-mission-container .our-mission .misson-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-mission-container .our-mission .our-mission-content {
+  width: 50%;
+}
+.our-mission-container .our-mission .our-mission-content h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.our-mission-container .our-mission .our-mission-content p {
+  margin-bottom: 1em;
+}
+.our-mission-container .our-mission .our-mission-content button {
+  background-color: rgb(144, 23, 255);
+  padding: 1em 2.5em;
+  border-radius: 15px;
+  border: none;
+  margin-top: 1em;
+  color: white;
+  cursor: pointer;
+}
+.our-mission-container .our-mission .our-mission-content button:hover {
+  background-color: black;
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8F8F6;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.contact-us-container .contact-us-content {
+  padding-left: 4em;
+}
+.contact-us-container .contact-us-content h1 {
+  font-size: 5em;
+  margin-top: 1em;
+  color: rgb(144, 23, 255);
+}
+.contact-us-container .contact-us-content p {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.contact-us-container .contact-us-content button {
+  padding: 2em 4.5em;
+  margin-top: 4em;
+  background-color: rgb(144, 23, 255);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.contact-us-container .contact-us-content button:hover {
+  background-color: black;
+}
+.contact-us-container .contact-us-content button a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.contact-us-container img {
+  width: 40%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 3em;
+}
+footer p {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+footer i {
+  color: white;
+  font-size: 2em;
+}
+footer .contact-content {
+  display: flex;
+  justify-content: space-around;
+}
+footer .right-reserved {
+  display: flex;
+  justify-content: space-around;
+}
+footer .right-reserved p {
+  margin-top: 1em;
+}
+
+.course-introduction-section {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(144, 23, 255);
+  color: white;
+  text-align: center;
+}
+
+.course-introduction-content {
+  width: 50%;
+}
+.course-introduction-content h1 {
+  font-size: 3em;
+  padding: 0.5em;
+}
+.course-introduction-content p {
+  font-size: 1.3em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.course-featuers-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.course-features {
+  padding: 0 2em;
+}
+
+.course-features-content-para {
+  display: flex;
+  margin-top: 2em;
+  gap: 20px;
+}
+.course-features-content-para i {
+  font-size: 1.4em;
+}
+
+.course-benefits-section {
+  display: flex;
+}
+
+.course-curriculam ul {
+  margin-left: 2em;
+}
+
+.course-benefits-content p {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.course-curriculam, .course-benefits-content, .take-decision-section, .take-decision2-section {
+  width: 50%;
+  padding: 3em;
+}
+.course-curriculam h1, .course-benefits-content h1, .take-decision-section h1, .take-decision2-section h1 {
+  margin-bottom: 1em;
+}
+
+.course-salary-section {
+  background-color: #F6D42B;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-salary {
+  width: 80%;
+}
+
+.success-stories-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 2em;
+}
+.success-stories-section h1 {
+  margin-bottom: 2em;
+  font-size: 2em;
+  color: rgb(144, 23, 255);
+}
+
+.success-stories-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.result {
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px #f0f0f0;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  gap: 20px;
+}
+
+.take-decision-container {
+  display: flex;
+}
+
+.take-decision-section p {
+  margin-bottom: 1em;
+}
+.take-decision-section img {
+  border: 2px solid black;
+}
+
+.faqs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faqs-section h1 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.faqs {
+  width: 50%;
+}
+
+details summary {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+details p {
+  margin-bottom: 20px;
+  line-height: 1.4em;
+  margin-left: 20px;
+}
+details ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-heading h1 {
+  text-align: center;
+  margin: 2em;
+  color: rgb(144, 23, 255);
+}
+
+span {
+  color: rgb(144, 23, 255);
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.azadchai-content-mission {
+  flex-direction: row-reverse;
+}
+
+.about-azadchai-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 40%;
+}
+.about-azadchai-content-header h1 {
+  margin-bottom: 1em;
+}
+.about-azadchai-content-header p {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .most-top {
+    justify-content: center;
+  }
+  .most-top .top-content {
+    flex-direction: row;
+    text-align: center;
+  }
+  .most-top .top-content p {
+    font-size: 0.8em;
+  }
+  nav img {
+    width: 200px;
+  }
+  nav i {
+    color: white;
+  }
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    width: 100%;
+    padding: 2em;
+    background-color: black;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) and (min-width: 624px) {
+  nav ul {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  nav .menuBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  nav .menuBtn span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.1s ease-in;
+  }
+  nav .menuBtn .bar.active:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+  nav .menuBtn .bar.active:nth-child(2) {
+    transform: translateY(-2px) rotate(45deg);
+  }
+  nav .menuBtn .bar.active:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  nav .menuBtn .close {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .ulClass {
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section .hero-container {
+    flex-direction: column;
+  }
+  .hero-section .hero-container .hero-container-content {
+    padding: 1em;
+    width: 100%;
+    margin-right: 0;
+  }
+  .hero-section .hero-container .hero-container-content p {
+    font-size: 0.9em;
+  }
+  .hero-section .hero-container .hero-section-video {
+    display: flex;
+    padding: 1em;
+  }
+  .hero-section .hero-container .hero-section-video video {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+@media (max-width: 768px) {
+  .popularity-container .popularity-section {
+    padding: 0;
+    gap: 10px;
+  }
+  .popularity-container .popularity-section .popularity-content {
+    text-align: center;
+  }
+  .popularity-container .popularity-section .popularity-content span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .why-we-are-mehangay-container {
+    flex-direction: column;
+  }
+  .why-we-are-mehangay-container .why-we {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about-students h1 {
+    font-size: 2em;
+  }
+  .about-students h2 {
+    font-size: 1.3em;
+  }
+  .about-students p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .courses-section .courses {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .courses-section .courses .course {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .our-mission-container .our-mission {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .hall-of-fame .results {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hall-of-fame .results .result {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .choosing-IT .reasons .reason {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .why-choose-us .why-choose-us_content h1 {
+    font-size: 1.4em;
+  }
+  .why-choose-us .why-choose-us_content h3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .life-at-institute h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .our-mission-container h1 {
+    font-size: 2em;
+  }
+  .our-mission-container .our-mission .our-mission-content {
+    width: 100%;
+  }
+  .our-mission-container .our-mission .our-mission-content h1 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .about-azadchai-content-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+  .contact-us-container .contact-us-content h1 {
+    font-size: 2em;
+  }
+  .contact-us-container .contact-us-content button {
+    font-size: 0.6em;
+  }
+  .contact-us-container img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  footer .contact-content {
+    flex-direction: column;
+  }
+  footer .contact-content .social-contact {
+    margin-top: 20px;
+  }
+  footer .contact-content img {
+    width: 200px;
+  }
+}/*# sourceMappingURL=home.css.map */
